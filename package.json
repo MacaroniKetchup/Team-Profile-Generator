@@ -1,0 +1,26 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "Team Profile Generator that displays a team profile via node.js terminal prompts and saves data to display into a html file",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MacaroniKetchup/Team-Profile-Generator.git"
+  },
+  "author": "MacaroniKetchup",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MacaroniKetchup/Team-Profile-Generator/issues"
+  },
+  "homepage": "https://github.com/MacaroniKetchup/Team-Profile-Generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
