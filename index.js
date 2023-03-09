@@ -5,8 +5,8 @@ const path = require('path');
 const fs = require('fs');
 const output_direct = path.resolve(__dirname, 'dist');
 const outputPath = path.join(output_direct, 'ourteam.html');
-const generateTeam = require('./src/template.js');
-const { default: inquirer } = require('inquirer');
+const generateTeam = require('./src/generate.js');
+const inquirer = require('inquirer');
 
 teamArray = [];
 // Function for team builder app
