@@ -4,7 +4,7 @@ const ourteamGenerate = ourteam => {
         return `
         <div class="box">
         <div class="columns">
-            <article class="column is-half message is-info">
+            <article class="column is-full message is-info">
                 <div class="message-header">
                     <h1 class="is-size-3 has-text-weight-bold">${manager.getName()}</h1>
                     <h2 class="is-size-4 has-text-weight-bold">☕ ${manager.getRole()}</h2>
@@ -26,7 +26,7 @@ const ourteamGenerate = ourteam => {
         return `
         <div class="box">
         <div class="columns">
-            <article class="column is-half message is-info">
+            <article class="column is-full message is-info">
                 <div class="message-header">
                     <h1 class="is-size-3 has-text-weight-bold">${engineer.getName()}</h1>
                     <h2 class="is-size-4 has-text-weight-bold">🕶️ ${engineer.getRole()}</h2>
@@ -36,7 +36,7 @@ const ourteamGenerate = ourteam => {
                     <br>
                     <p>Email: <a href="mailto:${engineer.getEmail()}">${engineer.getEmail()}</a></p>
                     <br>
-                    <p>GitHub: <a href="https://github.com/${engineer.getGitHub()}">${engineer.getGitHub()}<a></p>
+                    <p>GitHub: <a href="https://github.com/${engineer.getGithub()}">${engineer.getGithub()}<a></p>
                 </div>
             </article>
         </div>
@@ -48,7 +48,7 @@ const ourteamGenerate = ourteam => {
         return `
         <div class="box">
         <div class="columns">
-            <article class="column is-half message is-info">
+            <article class="column is-full message is-info">
                 <div class="message-header">
                     <h1 class="is-size-3 has-text-weight-bold">${intern.getName()}</h1>
                     <h2 class="is-size-4 has-text-weight-bold">🎓 ${intern.getRole()}</h2>
