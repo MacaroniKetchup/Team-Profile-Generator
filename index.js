@@ -17,7 +17,8 @@ function teamApp () {
             type: 'list',
             message:'What level of employee are you adding to the team?',
             name: "addEmployeePrompt",
-            choices: ['Manager, Engineer, Intern, No more to add to the team.']
+            choices: ['Manager', 'Engineer', 'Intern', 'No more to add to the team.']
+
         }]).then(function(userInput) {
             switch(userInput.addEmployeePrompt) {
                 case 'Manager':
@@ -100,26 +101,26 @@ function teamApp () {
         inquirer.prompt ([
             {
                 type: 'input',
-                name:'InternName',
+                name:'internName',
                 message: 'Input the name of the Intern.'
             },
             {
                 type: 'input',
-                name: 'engineerId',
+                name: 'internEmail',
                 message: "Input Intern's ID no."
             },
             {
                 type: 'input',
-                name: 'engineerEmail',
+                name: 'internId',
                 message: "Input the Intern's email."
             },
             {
                 type: 'input',
-                name: 'engineerGithub',
-                message: "Input the Interns's Github username."
+                name: 'internSchool',
+                message: "What School does the Intern attend?."
             }
         ]).then(answers => {
-            const intern = new Intern(answers.internName, answers.internId, answers.internEmail, answers.internGithub);
+            const intern = new Intern(answers.internName, answers.internId, answers.internEmail, answers.internSchool);
             teamArray.push(intern);
             createTeam();
         });
@@ -130,6 +131,6 @@ function teamApp () {
         fs.writeFileSync(outputPath, generateTeam(teamArray),"utf-8")
     }
     createTeam();
-}
+};
 //Runs the team builder app
 teamApp();

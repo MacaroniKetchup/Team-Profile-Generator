@@ -1,19 +1,19 @@
-const Engineer = require('../lib/Intern');
-// Testing github input for Intern
-test('gets to input github.', () => {
-    const gitHubTest = 'MacaroniKetchup';
-    const newEmployee = new Intern('Cory', 2, 'stylesthestyer@gmail.com', gitHubTest);
-    expect(newEmployee.github).toBe(gitHubTest);
+const Intern = require('../lib/Intern');
+// Testing school input for Intern
+test('gets to input school.', () => {
+    const testSchool = 'MacaroniKetchup';
+    const newEmployee = new Intern('Cory', 2, 'stylesthestyer@gmail.com', testSchool);
+    expect(newEmployee.school).toBe(testSchool);
 });
-// Testing if gitHubTest will return github
-test('gitHubTest to return github', () => {
-    const gitHubTest = 'MacaroniKetchup';
-    const newEmployee = new Intern('Cory', 2, 'stylesthestyer@gmail.com', gitHubTest);
-    expect(newEmployee.getGitHub()).toBe(gitHubTest);
+// Testing if testSchool will return school
+test('testSchool to return school', () => {
+    const testSchool = 'MacaroniKetchup';
+    const newEmployee = new Intern('Cory', 2, 'stylesthestyer@gmail.com', testSchool);
+    expect(newEmployee.getSchool()).toBe(testSchool);
 });
 // Testing for the Intern Value
 test('testing Intern role', () => {
     const valueReturn = 'Intern';
-    const newEmployee = new Intern('Cory', 2, 'stylesthestyer@gmail.com', 'MacaroniKetchup');
+    const newEmployee = new Intern('Cory', 2, 'stylesthestyer@gmail.com', 'UofA');
     expect(newEmployee.getRole()).toBe(valueReturn);
 });

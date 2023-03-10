@@ -1,12 +1,12 @@
-const Engineer = require('../lib/Manager');
-// Testing github input for Manager
-test('gets to input github.', () => {
+const Manager = require('../lib/Manager');
+// Testing office number input for Manager
+test('gets to input office number.', () => {
     const officeNumTest = 2;
     const newEmployee = new Manager('Cory', 2, 'stylesthestyer@gmail.com', officeNumTest);
     expect(newEmployee.officeNum).toBe(officeNumTest);
 });
-// Testing if officeNumTest will return github
-test('officeNumTest to return github', () => {
+// Testing if officeNumTest will return office number
+test('officeNumTest to return office number', () => {
     const officeNumTest = 2;
     const newEmployee = new Manager('Cory', 2, 'stylesthestyer@gmail.com', officeNumTest);
     expect(newEmployee.getOfficeNum()).toBe(officeNumTest);

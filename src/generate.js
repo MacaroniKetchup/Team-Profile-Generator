@@ -58,7 +58,7 @@ const ourteamGenerate = ourteam => {
                     <br>
                     <p>Email: <a href="mailto:${intern.getEmail()}">${intern.getEmail()}</a></p>
                     <br>
-                    <p>GitHub: <a href="https://github.com/${intern.getGitHub()}">${intern.getGitHub()}<a></p>
+                    <p>School: ${intern.getSchool()}</p>
                 </div>
             </article>
         </div>
@@ -109,7 +109,7 @@ module.exports = ourteam => {
 <br>
 
 <body>
-    <div class="columns is-multiline is-mobile>
+    <div class="columns is-multiline is-mobile">
         ${ourteamGenerate(ourteam)}
     </div>
 </body>
