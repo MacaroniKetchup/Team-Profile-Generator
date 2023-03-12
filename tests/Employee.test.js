@@ -14,7 +14,7 @@ test('Input name.', () => {
 test('Input ID.', () => {
     const idNo = 2
     const newEmployee = new Employee('Cory', idNo);
-    expect(newEmployee.id).toBe(idNo);
+    expect(newEmployee.idNo).toBe(idNo);
 })
 // Test Email input
 test('Input Email.', () => {

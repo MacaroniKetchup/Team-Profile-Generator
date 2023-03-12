@@ -9,7 +9,7 @@ test('gets to input github.', () => {
 test('gitHubTest to return github', () => {
     const gitHubTest = 'MacaroniKetchup';
     const newEmployee = new Engineer('Cory', 2, 'stylesthestyer@gmail.com', gitHubTest);
-    expect(newEmployee.getGitHub()).toBe(gitHubTest);
+    expect(newEmployee.getGithub()).toBe(gitHubTest);
 });
 // Testing for the Engineer Value
 test('testing Engineer role', () => {
